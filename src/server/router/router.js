@@ -25,8 +25,8 @@ const token = jwt.sign(
 // })
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    // res.json({'user':db.user.find()})
-    res.sendFile('../views/index.html');
+    res.json({'user':db.user.find()})
+    // res.sendFile('../views/index.html');
 });
 router.get('/login',function (req,res,next) {
     let checkInfo = db.user.findOne({"username": req.query.user, "password": req.query.pass});

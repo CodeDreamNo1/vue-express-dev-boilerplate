@@ -5,7 +5,7 @@ import Router from 'vue-router'
 import store from './../store/store'
 
 // 导入相应的子组件
-import Hello from './../components/index'
+import index from './../components/index'
 
 Vue.use(Router)
 
